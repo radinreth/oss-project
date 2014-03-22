@@ -1,0 +1,1 @@
+ <div id="message" style="width:100%; height:auto; margin-top:50px; font-size:20px; text-align:center;"><strong>Thank you for your register.</strong> <br />Please contact admin System to access account :<br /> 012345678 / 011 322 333, If free no need confirm :)<br /><a href="../log_in/index.php">login now</a></div>

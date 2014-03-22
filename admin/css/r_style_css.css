@@ -1,0 +1,147 @@
+
+#r_body{
+	width:100%; 
+	background: url(../images/r_user_set.jpg) repeat;
+	margin:0 auto;
+	}
+
+#r_body_cover{
+	margin:0 auto;
+	margin-top:39px;
+	width:880px;
+	height:510px;
+	
+	}
+
+#r_column_info{
+	height:226px;
+	width:856px;
+	background:url(../images/r_column_info.jpg) repeat;
+	margin-top:0px;
+	float:left;
+	}
+#r_column_info_left{
+	width:483px;
+	height:225px;
+	float:left;
+	
+	}
+#r_column_info_right{
+	width:300px;
+	height:225px;
+	float:left;
+	
+	}
+
+#r_column_down{
+	width:856px;
+	height:254px;
+	float:left;
+	background:url(../img/r_user_set.jpg) repeat;
+	
+	}
+.r_inside_tb_info{
+	margin: 15px auto;
+	width:400px;
+	height:200px;
+	float:left;
+	margin-left:100px;
+	}
+
+	
+.hold_text_field{
+	font-style: normal;
+	font-size: 12px;
+	font-weight:normal;
+	color: #6b6969;
+	height:40px;
+	width:400px;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	}
+	.label_fiel{
+		width:70px;
+		height:25px;
+		float:left;
+		padding-top:15px;
+		text-align:right;
+	}
+	.input_text{
+		width:330px;
+		height:30px;
+		float:left;
+		padding-top:10px;
+	}
+	.gender{
+		border: 1px solid #CCCCCC;
+		border-radius: 1px;
+		height:25px;
+		width:270px;
+		background-color:#f6f7f9;
+		font-size: 12px;
+		margin-left:25px;
+		color: #6b6969;
+	}
+	
+	
+.r_tb_info{
+	border: 1px solid #CCCCCC;
+    border-radius: 1px;
+    height: 25px;
+    line-height: normal;
+    width: 270px;
+	background-color:#f6f7f9;
+	font-style: normal;
+	font-size: 12px;
+	font-weight:normal;
+	margin-left:25px;
+	
+}
+
+
+
+#r_photo{
+	height:102px;
+	width:100px;
+	margin: 15px 100px 0px 100px;	
+	background:#f6f7f9;
+	overflow:hidden;
+	}
+#r_browse{
+	height:22px;
+	width:100px;
+	margin:15px 100px 0px 100px;	
+	background:#f6f7f9;
+	cursor:pointer;
+	text-align:center;
+	font-size:13px;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	color:#9d9d9d;
+	border-radius:3px 3px;
+float:left;
+
+	
+	}
+
+#r_authorized{
+	height:120px;
+	width:706px;
+	padding:34px 50px;
+	margin-left:50px;
+	
+}
+#btn_save_user{
+	width:102px;
+	height:24px;
+	background:#17bb51;
+	border:none;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	font-size:13px;
+	color:#FFFFFF;
+}
+.r_font_standard{
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#7e7c7c;
+	background:#FFF;
+	height:250px;
+}

@@ -1,0 +1,405 @@
+@import 'normalization.css';
+body{
+	margin:0 0;
+}
+#s_content_all{
+	width:1280px;
+	height:auto;
+	background:#FFF;
+	margin:0 auto;
+}
+#s_header{
+	width:1280px;
+	height:89px;
+	float:left;
+	
+	background:url(../images/commons/background_header.png) repeat-x;
+}
+#s_inner_header{
+	width:1240px;
+	height:89px;
+	float:left;
+	padding:0 20px;
+}
+#s_logo{
+	
+	width:186px;
+	height:71px;
+	float:left;
+	
+}
+#s_menu{
+	width:919px;
+	height:51px;
+	float:left;
+	padding-top:20px;
+	padding-left:135px;
+}
+#s_icons{
+	height:51px;
+	width:auto;
+	padding-right:20px;
+	float:left;
+}
+#s_letter{
+	height:51px;
+	width:auto;
+	padding-right:39px;
+	float:left;
+	text-align:left;
+}
+#log_in{
+	height:51px;
+	width:auto;
+	float:right;
+	padding-right:5px;
+}
+#sigu_up{
+	height:51px;
+	width:auto;
+	float:right;
+	
+}
+#s_date_show{
+	width:600px;
+	height:14px;
+	float:left;
+	padding-left:50px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+
+#s_body{
+	width:1280px;
+	height:auto;
+	float:left;
+	background:#f4ebeb;
+}
+	#s_description{
+		width:710x;
+		padding:18px 285px 18px 285px;
+		height:172px;
+		background:#ffffff;
+		text-align:center;
+
+	}
+		
+		#s_title_b{
+			
+			display:table;
+			margin:0 auto;
+			height:46px;
+			font-size:29px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+		}
+		#s_title_sign{
+			
+			display:table;
+			margin:0 auto;
+			height:27px;
+		}
+		
+		#s_detial_description{
+			height:90px;
+			padding-top:28px;
+			font-size:12px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-weight:bold;
+			
+		}
+		#s_detial_description_line1{
+			height:30px;
+			font-size:13px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-style:normal;
+			text-align:center;
+			color:#5d5d5d;
+		}
+		
+		
+	#s_form_sign_up{
+		padding-top:29px;
+		width:316px;
+		margin:0 auto;
+		height:290px;
+		background:#f4ebeb;
+		padding-bottom:29px;
+	}
+	.txtname{
+		
+		width:316px;
+		height:29px;
+		border:1px solid #CCC;
+		border-radius:5px;
+	}
+	.btn_signup{
+		width:316px;
+		border:1px #00b3f5;
+		height:33px;
+		border-radius:5px;
+		background:#00b3f5;
+		font-size:16px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		color:#ffffff;
+	}
+.clear{
+	display:block;
+	clear:both;
+}
+#s_footer{
+	width:1280px;
+	height:290px;
+	float:left;
+	background:#FFF;
+}
+#s_device{
+	width:876px;
+	height:91px;
+	float:left;
+	background:url(../images/commons/background_device.png) repeat-x;
+	padding-left:404px;
+}
+#s_each_device{
+	padding-top:5px;
+	height:91px;
+	width:auto;
+	float:left;
+	padding-right:48px;
+	text-align:center;
+	font-size:14px;
+	color:#333;
+}
+#s_each_device_l{
+	height:20px;
+	width:auto;
+	float:left;
+	padding-right:85px;
+	text-align:center;
+	font-size:14px;
+	color:#333;
+	padding-left:30px;
+}
+#s_device_name{
+	width:876px;
+	height:20px;
+	float:left;
+	padding-left:404px;
+	background:#FFF;
+}
+#s_line_style{
+	width:876px;
+	height:7px;
+	float:left;
+	padding-left:404px;
+	text-align:right;
+	background:url(../images/commons/line_style.png) repeat-x;
+}
+#s_menu_footer{
+	width:1259px;
+	height:70px;
+	float:left;
+	padding-left:21px;
+}
+#s_list_manu{
+	
+	width:374px;
+	height:70px;
+	float:left;
+	padding-left:21px;
+	
+}
+#s_copy_manu{
+	width:843px;
+	height:70px;
+	padding-right:21px;
+	float:left;
+	text-align:right;
+}
+#s_list_item{
+	padding-top:10px;
+	height:20px;
+	width:auto;
+	float:left;
+	font-size:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	padding-right:30px;
+}
+#s_menu_logo{
+	padding-top:5px;
+	width:843px;
+	height:30px;
+	float:left;
+	font-size:10px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#s_media_footer{
+	width:1259px;
+	height:58px;
+	float:left;
+	padding-left:21px;
+	background:url(../images/commons/footer_bg.png) repeat-x;
+}
+#s_social{
+	width:156px;
+	height:58px;
+	float:left;
+	
+}
+		#s_twitter{
+			width:51px;
+			height:58px;
+			float:left;
+		}
+		#s_facebook{
+			width:57px;
+			height:58px;
+			float:left;
+		}
+		#s_googleplus{
+			width:48px;
+			height:58px;
+			float:left;
+		}
+#s_chateline{
+	width:1098px;
+	height:36px;
+	float:left;
+	text-align:right;
+	padding-right:5px;
+	padding-top:22px;
+}
+	#s_chat{
+		width:154px;
+		height:23px;
+		background:#999;
+		text-align:center;
+		float:right;
+		padding-top:3px;
+	}
+#s_term_condiction{
+	padding-top:14px;
+	width:1259px;
+	height:30px;
+	float:left;
+	padding-left:21px;
+	background:#171717;
+	color:#9a9a9a;
+	font-size:10px;
+}
+/*=======leang==========*/
+#l_body{
+	width:1280px;
+	height:auto;
+	float:left;
+}
+#l_left{
+	width:716px;
+	padding-left:158px;
+	padding-top:60px;
+	float:left;
+	height:auto;	
+}
+#l_right{
+	width:375px;
+	float:left;
+	padding-left:30px;
+	padding-top:60px;
+	height:auto;	
+}
+.l_right_text{
+	width:375px;
+	float:left;
+	height:auto;
+}
+.l_title{
+	width:716px;
+	float:left;
+	height:60px;
+}
+.l_text_high{
+	width:716px;
+	float:left;
+	height:125px;
+}
+.l_text{
+	width:716px;
+	float:left;
+	height:auto;
+}
+.l_sub_title{
+	padding-top:15px;
+	width:716px;
+	float:left;
+	height:21px;
+}
+.l_text_sub{
+	width:671px;
+	float:left;
+	height:auto;
+	padding-left:45px;
+}
+.l_right_service{
+	width:375px;
+	float:left;
+	height:142px;
+}
+.l_service_left{
+	width:5px;
+	float:left;
+	height:142px;
+	background:url(../images/term_condition/service_left.png) no-repeat;
+}
+.l_service_right{
+	width:5px;
+	float:left;
+	height:142px;
+	background:url(../images/term_condition/service_right.png) no-repeat;
+}
+.l_service_mid{
+	width:365px;
+	float:left;
+	height:142px;
+	background:url(../images/term_condition/service_mid.png) repeat;
+}
+.l_contact_title{
+	width:365px;
+	float:left;
+	height:25px;
+	padding-top:5px;
+}
+.l_contact_text{
+	width:360px;
+	float:left;
+	height:112px;
+	padding-left:5px;
+}
+.l_r_title{
+	width:365px;
+	float:left;
+	height:auto;
+}
+.l_comment{
+	width:365px;
+	float:left;
+	height:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.l_comment_img{
+	width:34px;
+	float:left;
+	height:auto;
+}
+.l_comment_text{
+	width:329px;
+	float:left;
+	height:auto;
+	padding-left:2px;
+}
+.l_comment_oss{
+	width:331px;
+	float:left;
+	height:12px;
+	padding-left:34px;
+}

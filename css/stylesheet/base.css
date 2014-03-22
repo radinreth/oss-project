@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+/* The file is for global */
+body{
+	font-family:"Segoe UI";
+	font-size: 13.01pt;
+	/*color: #000;*/
+}
+.clear{
+	clear:both;	
+}
+#contain-wrapper{
+	width:100%;
+	height: auto;
+	margin:0 auto;
+}
+header{
+	width:100%;
+	height:104px;
+	/*background:url(../../images/commons/header-bg.png) repeat;*/
+	padding-top:20px;
+}
+#logo{
+	width:240px;	
+	float:left;
+	text-align:left;
+	min-height:100px;
+	font-size:10px;
+}
+#date_show{
+	margin-left:47px;
+	font-size:12.5px;
+	font-family:"Segoe UI",Verdana, Geneva, sans-serif;
+	height:20px;
+	position:absolute;
+	margin-top:-6px;
+}
+#nav-top{
+	padding-top:10px;
+	width:893px;
+	float:left;
+	text-align:center;
+}
+#nav-top ul a{
+	text-decoration: none;
+	font-weight:lighter;
+	color: #7E7E7E;
+	text-shadow:1px 1px 1px #ccc;
+}
+.label-search{
+	font-weight:bold;
+	/*color: #ABABAB;*/
+	color: #8E8E98;
+	text-shadow:0.8px 0.8px 0.8px #ccc;
+}
+#nav-top ul a:hover{
+	color: #0084ff;	
+}
+#nav-top ul li{
+	font-weight:700;
+	text-transform: uppercase;
+	margin: 0 30px 0 14px;
+	font-size: 10.5pt;
+}
+ul li{
+	display: inline;	
+}
+#header-button{
+	width:147px;
+	float:left;
+	padding-top:19px;
+	position:relative;
+}
+footer{
+	width:100%;
+	float:left;	
+}
+#nav-bottom{
+	width: 363px;
+	float:left;
+	padding-left: 49px;
+}
+#nav-bottom ul{
+	list-style-type:circle;
+	margin-bottom:0;
+}
+#nav-bottom ul:nth-child(2){
+	margin-top:0;	
+}
+#nav-bottom ul li{
+	background:url(../../images/commons/dot-black.png) no-repeat center left;
+	padding: 0 14px;
+	background-position:;
+	color:#7F7F7F;
+	font-size: 7pt;
+	text-transform:uppercase;
+    letter-spacing: 0.06em;	
+	font-family:Verdana, Geneva, sans-serif;
+}
+#nav-bottom ul li a:hover{
+	color: blue;
+	text-decoration: underline !important;	
+}
+#device-support ul{
+	margin:0;
+	margin-top:4px;
+}
+#device-name{
+	float:left;	
+	width:100%;
+	border-bottom:1px solid #ccc;
+	position: relative;
+}
+#device-name img{
+	position: absolute;
+	right:0;
+	bottom:0;
+}
+#device-name ul{
+	display:inline;	
+}
+#device-name ul li{
+	font-weight:normal;
+	font-size:11pt;
+}
+#device-name ul li:nth-child(1){
+	margin-left:413px;
+}
+#device-name ul li:nth-child(2){
+	margin-left:101px;
+}
+#device-name ul li:nth-child(3){
+	margin-left:90px;
+}
+#device-name ul li:nth-child(4){
+	margin-left:51px;
+}
+#social-share{
+	float:left;
+}
+#copy-right{
+	width: 868px;
+	float:right;
+	text-align:right;
+	margin-top:6px;
+}
+.string-copy-right{
+	font-size:9pt;
+	color:#a0a0a0;
+}
+
+.ico-fb{
+	background: none repeat scroll 0 0 #EFEFEF;
+    border: 1px solid #BEBEBE;
+	cursor: pointer;
+    position: absolute;    
+    top: 3px;
+}
+#like{
+	right: 3px;
+}
+#dislike{
+	right: 31px;
+}

@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	padding: 0;
+	margin: 0;
+	background:url(../images/body-bg.png) repeat;
+}
+
+#content-header {
+	height: 62px;
+	width: 100%;
+	background-color: #f6f7f9;
+	box-shadow: 0 3px 5px #888888;
+}
+.header {
+	width: 1280px;
+	margin: 0 auto;
+}
+#admin-logo {
+	width: 144px;	
+}
+#menu-lists {
+	width: 787px;	
+}
+#sca {
+	width: 349px;
+	padding-top: 20px;
+}
+.search {
+	width: 184px;	
+}
+.search input {
+	border: 1px solid #ccc;	
+	border-radius: 3px;
+	padding-left: 3px;
+}
+.text-center {
+	text-align: center;	
+}
+.account {
+	width: 107px;	
+}
+.account h5 {
+	font-family:"Segoe UI";
+	font-size: 11px;
+	color: #1b1919;
+	margin: 5px;
+	padding: 0;
+}
+.config {
+	width: 56px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}	
+#menu-lists ul li {
+	display: inline;
+	margin-right: 100px;
+	font-size: 14px;
+	position: relative;
+	font-family: "Segoe UI";
+}
+.ico-text {
+	position: absolute;
+	top:-7px;
+	left:33px;
+}
+.ico {
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 22px;
+	height: 24px;
+	display:inline-block;
+	
+}
+
+.chat {
+	background-image:url(../images/chat.png);
+}
+.history {
+	background-image:url(../images/history.png);
+	
+}
+.users {
+	background-image:url(../images/users.png);
+	
+}
+.report {
+	background-image:url(../images/report.png);
+	
+}
+.fl {
+	float: left !important;	
+}
+.fr {
+	float: right !important;	
+}
+
+#main-body {
+	width: 853px;
+	height: auto;
+	margin: 38px auto;
+}
+#content-body {
+	width: 100%;
+	height: auto;
+}
+.cls {
+	clear:both;	
+}
+.v-name {
+	display: block;
+	font-family:"Myriad Pro";
+	font-size: 12px;
+	color: #393939;
+	
+}
+.v-geo {
+	font-family:"Myriad Pro";
+	font-size: 11px;
+	color: #7e8b90;	
+	
+}
+/*override*/
+.resp-tabs-list li {
+	position: relative;	
+	height: 20px;
+}
+.resp-tabs-list li img {
+	position: absolute;
+	top: 9px; 
+	left: 8px;
+}
+td,th{
+	color: #8e8e8e;
+	text-align: center;
+	font-size: 10pt;
+	height: 42px;
+	vertical-align: center;		
+}
+.textbox-search{
+	width: 147px;
+	padding-left: 9px;
+	border: none;
+	color: #b0b7b9;
+	vertical-align: center;
+	font-size: 11pt;
+	font-family: "Myriad Pro";
+}
+.button-search{
+	content: " ";
+	width: 12px;
+	height: 14px;
+	border: none;
+	cursor: pointer;
+	background: url('../images/commons/search.png') no-repeat;
+}
+.box-wrapper {
+	height: 450px;
+	overflow:scroll;
+}
+.chat-menu li {
+	display: inline;
+	margin-right: 10px;
+}
+.chat-menu {
+	margin-top: 6px;
+}
+.log-action-menu{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+.log-action-menu li{
+	text-align:right;
+}
+.log-action-menu li span{
+	font-family:"Segoe UI";
+	font-size: 12px;
+	color: #858282;
+}
+/* control operator */
+#content-operator{
+	width: 1249px;
+	padding-left: 31px;
+	height: auto;
+	margin: 0 auto;
+}
+#operator-search,#wrap-content-operator{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+#operator-search-form{
+	width: 163px;/*163px*/
+	height: 27px;
+	float: left;
+	margin-top: 34px;
+	margin-bottom: 18px;
+	background: #f6f7f9;
+	border: #d1d1d1 solid 1px;
+}
+#operator-search-form .textbox-search{
+	width: 130px;	
+	height: 25px;
+	float: left;
+	padding-left: 11px;
+	background: #f6f7f9;
+}
+#operator-search-form .button-search{
+	width: 22px;
+	height: 25px;
+	background: url('../images/commons/search.png') center center no-repeat;
+}
+#operator-list{
+	width: 753px;
+	height: auto;
+	float: left;
+}
+#operator-list tr:hover{
+	background: #f9f8f8;
+}
+#operator-list tr:nth-child(odd){
+	background: white;
+}
+#operator-list tr:nth-child(even){
+	background: #f8f8f8;	
+}
+#operator-details{
+	width: 423px;
+	height: auto;
+	float: left;
+	padding-left: 41px;
+}
+.operator-profile,.operator-maps{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.operator-image{
+	width: 77px;
+	height: 77px;
+	float: left;
+	overflow: hidden;
+}
+.operator-content{
+	width: 321px;
+	padding-left: 20px;
+	float: left;
+	padding-bottom: 31px;
+}
+.operator-name{
+	color: #585859;
+	font-size: 18pt;
+	font-family: "Tw Cen MT";
+	padding-bottom: 23px;
+	float: left;
+}
+.operator-email,.operator-phone,.operator-address{
+	color: #34373b;
+	font-size: 10pt;
+	font-family: "Segoe UI";
+}
+.operator-phone{
+	padding-top: 7px;
+}
+.operator-address{
+	padding-top: 19px;
+	font-weight: bold;
+}
+.font-normal{
+	font-weight: normal;
+	padding-top: 9px;
+	float:left;
+}
+.operator-feature{
+
+}
+.feature-title{
+	width: 100%;
+	float: left;
+	padding: 22px 0 11px 0;	
+	font: 10pt "Segoe UI" bold;
+	border-bottom: #d8d8d8 solid 1px;
+	text-transform: uppercase;
+	color: #34373b;
+}
+#feature-list{
+}
+.feature-text{
+	width: 141px;
+	float: left;
+	color: #129165;
+	font: 10pt "Segoe UI";
+	padding: 11px 0;
+}
+
+

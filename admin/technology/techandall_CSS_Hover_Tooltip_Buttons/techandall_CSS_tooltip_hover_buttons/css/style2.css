@@ -1,0 +1,290 @@
+/* Button with Tool tip by Rubayath Rahman
+http://www.techandall.com  */
+
+* {
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+	-ms-transition: all 300ms;
+	transition: all 300ms;
+}
+
+-------------------------------------
+Facebook
+-------------------------------------
+*/
+
+
+#facebook li {
+	display: block;
+	width: 50%;
+	font-weight: 400;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding-top: 1.4em;
+	padding-right: 2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	float: left;
+}
+#facebook span {
+	display: block;
+	border: 3px solid #325f83;  /*Button Border color and border size  - Techandall.com*/
+	border-radius: 100%;  /* you can change the border radius if you want a square button, example 10%   - Techandall.com*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 7em;
+	height: 7em;
+	background: #01457b; /*Button background color  - Techandall.com*/
+	color: #fff; /*Button font color  - Techandall.com*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	line-height: 1em;
+	font-weight: 700;
+	padding: 2.7em 0 0 0;
+	text-align: center;
+	margin: -1.4em 1em 0 0;
+	text-transform: uppercase;
+	float: left;
+}
+#facebook span:hover {
+	background: #fff !important;
+	color: #5d6365; /*Button hover colors  - Techandall.com*/
+	border: 3px solid #5d6365 !important;
+	cursor: pointer;
+}
+
+
+-------------------------------------
+Twitter
+-------------------------------------
+*/
+
+
+#twitter li {
+	display: block;
+	width: 50%;
+	font-weight: 400;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding-top: 1.4em;
+	padding-right: 2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	float: left;
+}
+#twitter span {
+	display: block;
+	border: 3px solid #1c68a5;
+	border-radius: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 7em;
+	height: 7em;
+	background: #3186ca;
+	color: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	line-height: 1em;
+	font-weight: 700;
+	padding: 2.7em 0 0 0;
+	text-align: center;
+	margin: -1.4em 1em 0 0;
+	text-transform: uppercase;
+	float: left;
+}
+#twitter span:hover {
+	background: #fff !important;
+	color: #5d6365;
+	border: 3px solid #5d6365 !important;
+	cursor: pointer;
+}
+
+
+
+-------------------------------------
+Google Plus
+-------------------------------------
+*/
+
+
+#google li {
+	display: block;
+	width: 50%;
+	font-weight: 400;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding-top: 1.4em;
+	padding-right: 2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	float: left;
+}
+#google span {
+	display: block;
+	border: 3px solid #c23a34;
+	border-radius: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 7em;
+	height: 7em;
+	background: #f05851;
+	color: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	line-height: 1em;
+	font-weight: 700;
+	padding: 2.7em 0 0 0;
+	text-align: center;
+	margin: -1.4em 1em 0 0;
+	text-transform: uppercase;
+	float: left;
+}
+#google span:hover {
+	background: #fff !important;
+	color: #5d6365;
+	border: 3px solid #5d6365 !important;
+	cursor: pointer;
+}
+
+
+-------------------------------------
+RSS Feed
+-------------------------------------
+*/
+
+
+#rss li {
+	display: block;
+	width: 50%;
+	font-weight: 400;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding-top: 1.4em;
+	padding-right: 2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	float: left;
+}
+#rss span {
+	display: block;
+	border: 3px solid #f38134;
+	border-radius: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 7em;
+	height: 7em;
+	background: #ff6600;
+	color: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	line-height: 1em;
+	font-weight: 700;
+	padding: 2.7em 0 0 0;
+	text-align: center;
+	margin: -1.4em 1em 0 0;
+	text-transform: uppercase;
+	float: left;
+}
+#rss span:hover {
+	background: #fff !important;
+	color: #5d6365;
+	border: 3px solid #5d6365 !important;
+	cursor: pointer;
+}
+
+
+
+-------------------------------------
+Techandall
+-------------------------------------
+*/
+
+
+#tech li {
+	display: block;
+	width: 50%;
+	font-weight: 400;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding-top: 1.4em;
+	padding-right: 2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	float: left;
+}
+#tech span {
+	display: block;
+	border: 3px solid #66ecbe;
+	border-radius: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 7em;
+	height: 7em;
+	background: #c0eede;
+	color: #406d5e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	line-height: 1em;
+	font-weight: 700;
+	padding: 2.7em 0 0 0;
+	text-align: center;
+	margin: -1.4em 1em 0 0;
+	text-transform: uppercase;
+	float: left;
+}
+#tech span:hover {
+	background: #fff !important;
+	color: #5d6365;
+	border: 3px solid #5d6365 !important;
+	cursor: pointer;
+}
+
+
+
+-------------------------------------
+dribbble
+-------------------------------------
+*/
+
+
+#dribbble li {
+	display: block;
+	width: 50%;
+	font-weight: 400;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding-top: 1.4em;
+	padding-right: 2em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	float: left;
+}
+#dribbble span {
+	display: block;
+	border: 3px solid #f88db6;
+	border-radius: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 7em;
+	height: 7em;
+	background: #ea4c89;
+	color: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	line-height: 1em;
+	font-weight: 700;
+	padding: 2.7em 0 0 0;
+	text-align: center;
+	margin: -1.4em 1em 0 0;
+	text-transform: uppercase;
+	float: left;
+}
+#dribbble span:hover {
+	background: #fff !important;
+	color: #5d6365;
+	border: 3px solid #5d6365 !important;
+	cursor: pointer;
+}
+
+

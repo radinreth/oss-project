@@ -1,0 +1,20 @@
+<?php if($gallery['photo1_smal']!=""){?>
+                    <div class="pop_main_innercont" id="image_1"><img src="images/product/<?php echo $gallery['photo1_smal']; ?>"></div>
+                    <?php }?>
+                    <?php if($gallery['photo2_smal']!=""){?>
+                    <div class="pop_main_innercont" id="image_2"><img src="images/product/<?php echo $gallery['photo2_smal']; ?>"></div>
+                    <?php }?>
+                    <?php if($gallery['photo3_smal']!=""){?>
+                    <div class="pop_main_innercont" id="image_3"><img src="images/product/<?php echo $gallery['photo3_smal']; ?>"></div>
+                    <?php }?>
+                    <?php if($gallery['photo4_smal']!=""){?>
+                    <div class="pop_main_innercont" id="image_4"><img src="images/product/<?php echo $gallery['photo4_smal']; ?>"></div>
+                    <?php }?>
+                    <?php if($gallery['photo5_smal']!=""){?>
+                    <div class="pop_main_innercont" id="image_5"><img src="images/product/<?php echo $gallery['photo5_smal']; ?>"></div>
+                    <?php }?>
+
+
+<?php $linkmap=$obj->mapImages($obj->convert_id_toAll(TABLE_SHOP,sh_id,latitude,$product_view['sh_id']),$obj->convert_id_toAll(TABLE_SHOP,sh_id,longitude,$product_view['sh_id']),16,"300x200");
+                    echo $linkmap; ?>
+
