@@ -17,6 +17,7 @@
     define('SERVER','root');
     define('PASSWORD','');      
     define('DATABASE','oss_db');
+
 	
 	
 	/*define('HOST','mysql7.000webhost.com');

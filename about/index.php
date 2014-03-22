@@ -10,6 +10,7 @@
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
+
 </head>
 <body>
 <!--facebook like page-->
@@ -46,11 +47,13 @@
 - identify activities of counters
 - easy chatting
 </div>
+
 			</div>
             
 			<div class="v_content">
 				<div class="v_content_title">Mission</div>
 				<div class="v_content_text">We commit to provide the operators who registered with our system to get the facilitated tool helping them to improve their performance much more effectively and efficiently in term of chatting, reporting and promoting new products through the OSS.</div>
+
 			</div>
             <div class="v_content">
             <div class="v_content_title">Gochat on Facebook</div>
@@ -59,6 +62,7 @@
             <!-- facebook like page-->
             </div>
 			<div id="v_company_moto">No Dream, No Man--  “  The why is strong, the how not important  “ </div>
+
 			<div id="v_wrap_certificate">
 				<div class="v_certificate"><img src="../images/about/v_trust_certificate.png"></div>
 				<div class="v_certificate"><img src="../images/about/v_authorize.net.png"></div>

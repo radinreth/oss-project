@@ -1,3 +1,4 @@
+
 <?php
 include '../class/class.php';
 define('PAGE_TITLE','sign_up');
@@ -35,6 +36,7 @@ define('PAGE_TITLE','sign_up');
             	
             <label style="padding-bottom:10px; float:left;"><input type="text" id="txtemail" name="txtemail" class="txtname_log" placeholder="E-mail" /></label>
                 <label style="padding-bottom:10px; float:left;"><input type="password" id="txtpassword" name="txtpassword" class="txtname_log" placeholder="Password"/></label>
+
                 <p>
                   <label class="check_auth">
                     <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_0" checked="checked"  />

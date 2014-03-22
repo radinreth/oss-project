@@ -32,6 +32,7 @@ include 'define.php';
                         $fullname= $this->clean($name);  
                         $email=$this->clean($email);
                         $password=md5($this->clean($pass));
+
 						$ip_addr=$_SERVER['REMOTE_ADDR'];
 						if($package!=0){
 							$status='0';
@@ -44,6 +45,7 @@ include 'define.php';
                         //$confrimCode=md5(uniqid(rand()));
                         $sql="Insert into ".TABLE_USER."(user_id,user_name,user_email,password,package,expired_date,user_phone,ip_address,user_type,photo,status) 
 						values('','$fullname','$email','$password','$package','$expired_date','000000000','$ip_addr','admin','defaul_photo.png',$status)";
+
                         if (mysql_query($sql)){
 							$_SESSION['new_reg']='1';
 							echo 'true';
@@ -179,8 +181,10 @@ include 'define.php';
 										   $_SESSION['photo']=$row['photo'];
 										   $_SESSION['position_opterator']='2';
 										   $_SESSION['package']=$row['package'];
+
 										   $_SESSION['expired_date']=$row['expired_date'];
 										   $_SESSION['reg_date']=$row['register_date'];
+
 										   echo 'true';
 										   
 								 }else{
@@ -487,7 +491,9 @@ include 'define.php';
 			   
                $table=TABLE_COUNTER;
                   if($con=='insert'){
+
                   		$sql="insert into ".$table."(ccm_id,user_id,ccm_name,gender,ccm_phone,ccm_email,password,
+
 											   photo,ccm_status,add_datetime,chat_status)
                           values('".$user_id."',
 								'".$opt_id."',
@@ -670,6 +676,7 @@ include 'define.php';
 	   $num_row=mysql_num_rows($query);
 	   return $num_row;
    }
+
 	//==============end vorleak===========
  }
  $obj=new Mycls();

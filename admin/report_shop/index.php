@@ -6,7 +6,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Administrator Reports</title>
+
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
+
 <link rel="stylesheet" href="../css/style.css" />
 <link rel="stylesheet" href="../css/style_report.css" type="text/css" />
 <script type="text/javascript" language="javascript" src="../js/jquery-1.6.3.min.js"></script>

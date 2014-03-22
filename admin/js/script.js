@@ -9,7 +9,9 @@ $(document).ready(function() {
                         }).submit();
 	});
 	//upload user photo
+
 	upgrade_user($(".btn_upgrade"));
+
 	
 	$("#frm_recompany").submit(function(e)
 	{
@@ -227,6 +229,7 @@ function remove_promotion(btn_remove_pro){
 		e.preventDefault(); //STOP default action
 		}
 	});
+
 }
 function upgrade_user(btn_upgrad){
 	btn_upgrad.click(function(e){
@@ -253,4 +256,5 @@ function upgrade_user(btn_upgrad){
 		});
 		e.preventDefault(); //STOP default action
 	});
+
 }

@@ -23,7 +23,9 @@ $query=mysql_query($sql);
 <script type="text/javascript" language="javascript" src="../js/easyResponsiveTabs.js"></script>
 <script language="javascript" type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
+
 </head>
 <body>
 	<div id="content-all">

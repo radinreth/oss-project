@@ -19,6 +19,7 @@ if(session_id() == '') {
 <link rel="stylesheet" href="../../chat_mode/css/style.css" />
 
 <script type="text/javascript" language="javascript" src="../../chat_mode/js/jquery.min.js"></script>
+
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
 
 

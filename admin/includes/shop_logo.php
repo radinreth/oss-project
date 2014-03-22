@@ -20,7 +20,9 @@ $path = "../../images/company_logo/";
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{
 									$_SESSION['shop_logo']=$actual_image_name;
+
 									echo "<img src='../../images/company_logo/".$actual_image_name."'  class='preview' width=100px> ";
+
 								}
 							else
 								echo "failed";

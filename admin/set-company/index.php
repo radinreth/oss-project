@@ -15,7 +15,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Administrator Reports</title>
+
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
+
 <link rel="stylesheet" href="../css/style.css" />
 <link rel="stylesheet" href="../css/style_report.css" type="text/css" />
 <script type="text/javascript" language="javascript" src="../js/jquery-1.6.3.min.js"></script>
@@ -40,7 +42,12 @@
                 <div id="chat_data_show_blank"></div>
                 <div id="chat_data_show">
                 <a href="../../company_profile/?shop_code=<?php echo $company['com_id'];?>" target="_blank"><?php echo (($state=='1')?'View Profile |':'');?></a> 
-               	 <a href="../set-promotion/"><?php echo (($state=='1')?'Add Promotion':'');?></a>
+
+                <span class="embed_span" onclick="alert('<script type=\'text/javascript\' language=\'javascript\' src=\'..\/js\/jquery.min.js\'><\/script>\n<script type=\'text/javascript\' language=\'javascript\' src=\'..\/js\/jquery.form.js\'><\/script>\n\n<script type=\'text\/javascript\'>\nvar shop_code = <?php echo $company['com_id'];?>;\n\n(function() {\n\tvar lc = document.createElement(\'script\'); \n\tlc.type = text\/javascript\'; \n\tlc.async = true; \n\tlc.src = \'..\/js\/box.js\';\n\tvar s = document.getElementsByTagName(\'script\')[0]; \n\ts.parentNode.insertBefore(lc, s); })();\n<\/script>');">
+                    <?php echo ($state==1) ? "Embed Script |":"" ?>
+                </span>
+               	<a href="../set-promotion/"><?php echo (($state=='1')?'Add Promotion':'');?></a>
+
               </div>
                 
             </div>
@@ -61,6 +68,7 @@
                 </label></td>
                 <td width="381"><label style="text-align:right;">
             <div id="photo_view" onclick="document.getElementById('com_logo').click();"><img src="../../images/company_logo/<?php echo $company['com_logo']!=''?$company['com_logo']:'company-icon.png';?>" width="100px"  /></div></label></td>
+
               </tr>
               <tr>
                 <td><label>

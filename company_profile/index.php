@@ -9,7 +9,9 @@ if(session_id() == '') {
 	if( true){
 		$obj = new Operations();
 		$_SESSION['ccm_id'] = $obj->get_ccm();
+
 		//echo '-> '.$_SESSION['ccm_id'];
+
 		session_write_close();
 	}
 //***
@@ -18,6 +20,7 @@ if(session_id() == '') {
 <?php
 include '../class/class.php';
 $shop_code=$_GET['shop_code'];
+
 $check=mysql_num_rows(mysql_query("Select com_id from ".TABLE_COMPANY." where com_id='$shop_code'"));
 if($check==0){
 	header("location:../not_found/");
@@ -25,12 +28,15 @@ if($check==0){
 if($shop_code==''){
 	header("location:../not_found/");
 }
+
 $commpany=$obj->get_shop_detial($shop_code);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="online, supporting, system, cambodia, connection, improve, business, organization"  />
 <meta name="description" content="online supporting system helps your organization to connect with your customers in a convenience way and effectively improve business profit" />
@@ -163,6 +169,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 <a href="../price"><img src="../images/commons/ico/price.png" alt="nav price" />&nbsp;&nbsp;<li>Price</li></a>
             	<a href="../about"><img src="../images/commons/ico/about.png" alt="nav about" />&nbsp;&nbsp;<li>About</li></a>
                 <a href="../contact"><img src="../images/commons/ico/contact.png" alt="nav contact" />&nbsp;&nbsp;<li>Contact</li></a>
+
            </ul>
         </nav>
         <section id="header-button">
@@ -177,6 +184,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         	<div id="l_c_body">
             	<div id="l_c_left">
        	    <div id="l_c_contract">
+
                     	<div id="l_c_photo"><img src="../images/company_logo/<?php echo $commpany["com_logo"];?>" width="79" /></div>
                         <div id="l_c_title_shop">
                         <table width="95%" border="0">
@@ -226,8 +234,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 <?php 
 				$sql="select *from ".TABLE_PROMOTION." where com_id='$shop_code' and prm_status='1' limit 3";
 			   	$query=mysql_query($sql);
+
 				$numrow=mysql_num_rows($query);
 				if($numrow>0){
+
 			   	while($result=mysql_fetch_array($query)){
 				?>
            	    <div class="l_c_news">
@@ -291,6 +301,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
             
         <div id="l_c_comment">
 			<div class="fb-comments" data-href="http://ffg-cambo.com/oss-mekong/company_profile/?shop_code=<?php echo $_Get['shop_code'];?>" data-width="1150px" data-numposts="5" data-colorscheme="light"></div>
+
         </div>
         
         <section id="device-support">

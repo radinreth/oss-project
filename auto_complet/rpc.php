@@ -5,9 +5,10 @@
 	
 	//$db = new mysqli('mysql7.000webhost.com', 'a7987138_oss', '@radin', 'a7987138_oss');
 
-	//$db = new mysqli('localhost', 'root', '', 'oss_db');
 
 	$db = new mysqli('localhost', 'root', '', 'oss_db');
+
+	//$db = new mysqli('localhost', 'ffgcambo', 'R!P6L?5&Kbhm', 'ffgcambo_oss');
 	
 	if(!$db) {
 		// Show error if we cannot connect.

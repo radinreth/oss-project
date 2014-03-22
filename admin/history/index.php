@@ -142,6 +142,7 @@
 										} else {
 										?>
                                         	<div>Not yet chat</div>
+
                                         <?php	
 										}
 										?>

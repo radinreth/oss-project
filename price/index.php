@@ -56,6 +56,7 @@
              	<div id="s_items_2">Advance Security</div>
               	<div id="s_items_2">Advance report</div>
                 
+
               	<div id="s_items_3"><a href="../sign_up?pakage=2" style="color:#666;"><label id="btn_buy" package="2">BUY NOW</label></a></div>
             </div>
         </div>

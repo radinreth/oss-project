@@ -5,26 +5,32 @@ if($_GET['action']=="logout"){
 	$obj->logout();
 	header("Location:../");
 }
+
 $check_expird=$obj->check_expird_date($_SESSION['id_operator']);
 echo $check_expird;
 if($check_expird<=0){
 	header("Location:account_expird/");
 }
 
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <title>Administrator</title>
 <link rel="stylesheet" href="css/style.css" /><!---style with header--->
 <script type="text/javascript" language="javascript" src="js/jquery-1.6.3.min.js"></script>
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
 
+
 </head>
 
 <body>
+
 	<div id="content-all" style="background:url(images/gochat.png) no-repeat; height:500px;">
+
     	
         <div id="content-header">
         	<div class="header">
@@ -41,10 +47,12 @@ if($check_expird<=0){
                             <span class="ico-text">CHAT</span>
                             </a>
                         </li>
+
                         <?php }else if(isset($_SESSION['position_opterator'])){
 							$check_expird=$obj->check_expird_date($_SESSION['id_operator']);
 							if($check_expird>0){
 						?>
+
                         <!--history-->
                         <li><a href="history">
                         	<span class="ico history"></span>
@@ -69,8 +77,10 @@ if($check_expird<=0){
                              <span class="ico-text">Company</span>
                             </a>
                         </li>
+
                         <?php }
 						}else{?>
+
                         <!--report admin-->
                         <li><a href="report_admin">
                         	<span class="ico report"></span>
@@ -97,6 +107,7 @@ if($check_expird<=0){
                 </div><!--sca-->
             </div>
         </div><!--content-header-->
+
        <!-- <div id="message" style="width:100%; height:auto; margin-top:50px; font-size:20px; text-align:center;"><img src="images/gochat.png" /></div>-->
        <div style="margin-top:50px; font-size:36px; padding-left:200px;padding-bottom:50px; font-family:'Courier New', Courier, monospace;">Hi <strong><?php echo ucwords($_SESSION['name']); ?></strong>,Welcome to Gochat System...!</div>
       
@@ -122,6 +133,7 @@ if($check_expird<=0){
         <div style="margin-top:20px; font-size:26px; padding-left:200px;padding-bottom:20px; font-family:'Courier New', Courier, monospace;">For new user, Before your start your Service :</div>
         <div class="tutorial">&rArr; You are an admin of system </div>
        <?php }?>
+
     </div><!--content-all-->
 </body>
 

@@ -54,7 +54,12 @@
 		function get_ccm(){
 			$com_record = $this->return_row("*", "company_profiles", "com_id='".$_REQUEST["shop_code"]."'");
 
-			$chat_message = mysql_query("select * from tbl_chat_message");
+
+			//$ccms_in_chat = $this->return_array("*","tbl_counter_companies","where user_id='".$com_record["user_id"]."'");
+			//$chat_message = mysql_query("select * from tbl_chat_message");
+
+			$chat_message = mysql_query("select * from tbl_chat_message where ccm_id in (select ccm_id from tbl_counter_companies where user_id='".$com_record["user_id"]."')");
+
 			if(mysql_num_rows($chat_message)==0) {
 				$ccm_id_sql = mysql_query(
 								"SELECT * from  tbl_counter_companies ccm
@@ -63,6 +68,14 @@
 										AND ccm.user_id = '".$com_record['user_id']."' 
 										AND ccm.online_status = 1
 									ORDER BY ccm.ccm_id ASC LIMIT 1 ");
+
+				// $ccm_id_sql = mysql_query(
+				// 				"SELECT * from  tbl_counter_companies ccm
+				// 					WHERE ccm.ccm_status = 1 
+				// 						AND ccm.chat_status = 1 
+				// 						AND ccm.online_status = 1
+				// 					ORDER BY ccm.ccm_id ASC LIMIT 1 ");
+
 			}else{
 				$ccm_id_sql = mysql_query(
 								"	SELECT count(*) as num, chm.ccm_id
@@ -84,8 +97,15 @@
 				$ccm_id_array = mysql_fetch_array($ccm_id_sql);
 				return $ccm_id_array['ccm_id'];
 			}
-		
-			//return '--> '.(mysql_num_rows($ccm_id_sql)==0);
+
+			
+			//return $_REQUEST["shop_code"].'--> '."select * from tbl_chat_message where ccm_id in (select ccm_id from tbl_counter_companies where user_id='".$com_record["user_id"]."')";
+		}
+		function return_single($field, $table, $condition){
+			$sql = "select $field from $table where $condition";
+			$query = mysql_query($sql);
+			$row = mysql_fetch_array($query);
+			return $row[$field];
 		}
 		function return_row($field, $table, $condition){
 			$sql = "select $field from $table where $condition";

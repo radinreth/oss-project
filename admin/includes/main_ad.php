@@ -59,6 +59,7 @@ if(isset($_POST['remove_pro_btn'])){
 	$sql="update ".TABLE_PROMOTION." set prm_status='0' where prm_id='$pormotion_id'";
 	$obj->Runsql($sql);
 }
+
 if(isset($_POST['grade_level'])){
 	$opt_id=$_POST['operat_id'];
 	$level=$_POST['grade_level'];
@@ -67,4 +68,5 @@ if(isset($_POST['grade_level'])){
 	$obj->Runsql($sql);
 	$obj->logout($sql);
 }
+
 ?>

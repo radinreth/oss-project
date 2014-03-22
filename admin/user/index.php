@@ -9,15 +9,19 @@
 		$obj->l_saveUsers('delete','where ccm_id="'.$_GET["user_id"].'"');
 		header("location:./");
 	}
+
 	unset($_SESSION['show_message']);
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <title>Administrator User</title>
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
+
 <link rel="stylesheet" href="../css/style.css" /><!---style with header--->
 <script type="text/javascript" language="javascript" src="../js/jquery-1.6.3.min.js"></script>
 
@@ -109,6 +113,7 @@
 				}
 		  		 ?>
             </div> 
+
            <?php 
 		   $num_row=$obj->check_new_opt($_SESSION['id_operator']);
 		   if($_SESSION['package']==0){
@@ -151,6 +156,7 @@
 			   }
 		   }
 		   ?>
+
         </div>
         <div id="l_body_right">
 <div id="l_info">

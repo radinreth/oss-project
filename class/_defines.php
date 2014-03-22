@@ -11,15 +11,23 @@
 	define('PASSWORD','@radin');
 	define('DATABASE','a7987138_oss');*/
 	
+
 	// define('HOST','localhost');
  //    define('USERNAME','root');
  //    define('PASSWORD','');      
  //    define('DATABASE','oss_db');
 
+
 	define('HOST','localhost');
     define('USERNAME','root');
     define('PASSWORD','');      
     define('DATABASE','oss_db');
+
+
+	// define('HOST','localhost');
+ //    define('USERNAME','ffgcambo');
+ //    define('PASSWORD','R!P6L?5&Kbhm');      
+ //    define('DATABASE','ffgcambo_oss');
 
 
 	

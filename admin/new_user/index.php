@@ -53,7 +53,9 @@
 <script type="text/javascript" src="../js/jquery-2.0.0.min.js"></script>
 <script src="../js/jquery.form.js" type="text/javascript"></script>
 <script src="../js/new_user.js" type="text/javascript"></script>
+
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
+
 </head>
 <body>
 	

@@ -9,8 +9,10 @@ define('PAGE_TITLE','sign_up');
 <link rel="stylesheet" href="../css/style.css" />
 <script src="../js/jquery-2.0.3.js"></script>
 <script src="../js/main.js"></script>
+
 <link rel="SHORTCUT ICON" href="http://www.ffg-cambo.com/oss-mekong/images/commons/icons.png"/>
 <title>Administration page</title>
+
 </head>
 
 <body>

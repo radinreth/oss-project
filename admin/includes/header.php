@@ -5,10 +5,12 @@ if($_GET['action']=="logout"){
 	$obj->logout();
 	header("Location:../../");
 }
+
 $check_expird=$obj->check_expird_date($_SESSION['id_operator']);
 if($check_expird<=0){
 	header("Location:../account_expird/");
 }
+
 
 ?>
 <div id="content-header">
@@ -63,6 +65,7 @@ if($check_expird<=0){
                                 <?php
 							}
 						}else{?><!--Admin function-->
+
                         <!--report admin-->
                         <li><a href="../report_admin/?page=report_ad">
                         	<span class="ico report"></span>

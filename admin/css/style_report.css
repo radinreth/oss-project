@@ -179,7 +179,8 @@
 	padding-top:5px;
 }
 #chat_data_show_blank{
-	width:200px;
+
+	width:158px;
 	height:30px;
 	float:left;
 	text-align:right;
@@ -187,7 +188,7 @@
 	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
 }
 #chat_data_show{
-	width:155px;
+	width:228px;
 	height:30px;
 	float:left;
 	text-align:right;
@@ -249,4 +250,8 @@
 	width:100px;
 	height:30px;
 	background:#0CF;
+}
+.embed_span {
+	cursor: pointer;
+	color: blue;
 }

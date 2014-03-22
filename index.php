@@ -116,6 +116,7 @@
                                 <img src="images/benefits/graph.png" alt="profile-slide" width="220" height="150"/>
                                 <h2 class="heading2-slide"> Best Performace</h2>
                                 <p style="color:#008080;">Make your company good service with customer and can analysis what is the customer need and what is the problem.</p>
+
                                 <aside class="aside-slide">
                                     <em class="learn-more-slide">Learn more</em>
                                     <img class="slide-img" src="images/commons/learn-more.png" alt="learn more" />
@@ -145,6 +146,7 @@
                                 <img src="images/benefits/v_global.png" alt="profile-slide" width="160" height="160" />
                                 <h2 class="heading2-slide">Globalization</h2>
                                 <p style="color:#008080;">Globalization for your website or company, because the customer can chat from anywhere and time to company.</p>
+
                                 <aside class="aside-slide">
                                     <em class="learn-more-slide">Learn more</em>
                                     <img class="slide-img" src="images/commons/learn-more.png" alt="learn more" />
@@ -170,6 +172,7 @@
                 	<p>Just click button Get started! It means you have registered as operator in our system already. One more thing is to see the term of condition and the agreement which is stated in the term of condition page then accept; so you are now registered.
 
 </p>
+
                     <!--<button>Get started!</button>-->
                     <a href="price/" style="text-decoration:none;"><span class="btn-start">Get started!</span></a>
                 </aside>
