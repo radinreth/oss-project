@@ -1,0 +1,254 @@
+#body_s{
+	width:100%;
+	height:738px;
+	margin:0 auto;
+}
+#body_s_adm{
+	width:100%;
+	height:1000px;
+	margin:0 auto;
+}
+#content_s_all{
+	width:853px;
+	height:738px;
+	margin:0 auto;
+}
+#content_s_all_adm{
+	width:853px;
+	height:738px;
+	margin:0 auto;
+}
+#counter_report_search{
+	width:730px;
+	height:53px;
+	float:left;
+	padding-top:42px;
+	padding-left:3px;
+	font-family:Myriad Pro,Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	padding-left:80px;
+}
+#counter_report_search_com{
+	width:850px;
+	float:left;
+	padding-top:42px;
+	padding-left:3px;
+	font-family:Myriad Pro,Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+}
+#counter_report_search_adm{
+	width:850px;
+	height:33px;
+	float:left;
+	padding-top:42px;
+	padding-left:3px;
+	font-family:Myriad Pro,Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+}
+#counter_report_s{
+	width:697px;
+	height:595px;
+	float:left;
+	background:#ffffff;
+	padding-top:20px;
+	padding-left:78px;
+	padding-right:78px;
+}
+#counter_report_s_register{
+	width:697px;
+	height:auto;
+	float:left;
+	background:#ffffff;
+	padding-top:20px;
+	padding-left:78px;
+	padding-right:78px;
+	padding-bottom:20px;
+}
+#counter_report_s_adm{
+	width:697px;
+	height:850px;
+	float:left;
+	background:#ffffff;
+	padding-top:20px;
+	padding-left:78px;
+	padding-right:78px;
+}
+#chart_line{
+	width:697px;
+	height:30px;
+	float:left;
+}
+#show_chart{
+	width:697px;
+	height:215px;
+	float:left;
+	margin-top:15px;
+	background:#CCC;
+	color:#999;
+	
+}
+#show_chart_setcompnay{
+	width:697px;
+	height:auto;
+	float:left;
+	padding-top:15px;
+}
+#show_chart_income{
+	width:697px;
+	height:215px;
+	float:left;
+	padding-top:15px;
+}
+.show_calculator_chart{
+	width:697px;
+	height:100px;
+	float:left;
+	border-bottom:1px #efeaea solid;
+}
+.show_calculator_chart_adm{
+	width:697px;
+	height:110px;
+	float:left;
+	border-bottom:1px #efeaea solid;
+}
+.icons_data_show{
+	padding:35px 0px;
+	width:59px;
+	height:34px;
+	float:left;
+}
+.icons_data_show_recent_confirm{
+	padding:14px 0px;
+	width:59px;
+	height:45px;
+	float:left;
+}
+.text_data_meaning{
+	padding-top:42px;
+	padding-bottom:32px;
+	width:480px;
+	height:26px;
+	float:left;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	font-size:19px;
+	padding-left:10px;
+}
+.text_data_meaning_admin{
+	padding-top:20px;
+	padding-bottom:32px;
+	width:480px;
+	height:48px;
+	float:left;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	font-size:16px;
+	padding-left:10px;
+	
+}
+.chart_data_s{
+	width:148px;
+	padding-top:42px;
+	padding-bottom:32px;
+	height:26px;
+	float:left;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	font-size:19px;
+	text-align:right;
+}
+.chart_data_s_adm{
+	width:148px;
+	padding-top:15px;
+	padding-bottom:32px;
+	height:48px;
+	float:left;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	font-size:19px;
+	text-align:right;
+}
+#chart_logo{
+	width:61px;
+	height:30px;
+	float:left;
+}
+#chart_text{
+	width:233px;
+	height:25px;
+	float:left;
+	padding-left:17px;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+	font-size:19px;
+	padding-top:5px;
+}
+#chat_data_show_blank{
+	width:158px;
+	height:30px;
+	float:left;
+	text-align:right;
+	font-size:12px;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+}
+#chat_data_show{
+	width:228px;
+	height:30px;
+	float:left;
+	text-align:right;
+	font-size:12px;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+}
+	.chats_report{
+		width:85px;
+		height:15px;
+		float:left;
+		text-align:left;
+	}
+#text_search_counter{
+	width:162px;
+	height:26px;
+	padding-left:3px;
+	border:1px solid #999;
+	background:#f6f7f9;
+	color:#3d7ff5;
+	font-family:Myriad Pro,Verdana, Geneva, sans-serif;
+}
+#photo_view{
+	width:100px;
+	height:100px;
+	text-align:center;
+	background:#CCC;
+	border:1px solid #666;
+	cursor:pointer;
+}
+
+.text_com{
+	width:200px;
+	height:29px;
+	color:#666;
+	padding-left:10px;
+}
+.text_com_area:hover{
+	border:1px solid #30F;
+	padding-left:10px;
+}
+.text_com_area{
+	color:#666;
+
+	padding-left:10px;
+}
+.text_com:hover{
+	border:1px solid #30F;
+}
+.com_btn{
+	width:100px;
+	height:30px;
+	border:1px solid #00F;
+	background:#CCC;
+	cursor:pointer;
+}
+.com_btn:hover{
+	width:100px;
+	height:30px;
+	background:#0CF;
+}
+.embed_span {
+	cursor: pointer;
+	color: blue;
+}

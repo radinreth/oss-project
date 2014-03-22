@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "My Protected Area"
+AuthUserFile /css/to/.htpasswd
+
+ErrorDocument 404 /error/404.php 

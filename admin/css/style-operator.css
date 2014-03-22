@@ -1,0 +1,116 @@
+/* control operator */
+#content-operator{
+	width: 1249px;
+	padding-left: 31px;
+	height: auto;
+	margin: 0 auto;
+}
+#operator-search,#wrap-content-operator{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+#operator-search-form{
+	width: 163px;/*163px*/
+	height: 27px;
+	float: left;
+	margin-top: 34px;
+	margin-bottom: 18px;
+	background: #f6f7f9;
+	border: #d1d1d1 solid 1px;
+}
+#operator-search-form .textbox-search{
+	width: 130px;	
+	height: 25px;
+	float: left;
+	padding-left: 11px;
+	background: #f6f7f9;
+}
+#operator-search-form .button-search{
+	width: 22px;
+	height: 25px;
+	background: url('../images/commons/search.png') center center no-repeat;
+}
+.operator-list{
+	width: 753px;
+	height: auto;
+	float: left;
+}
+.operator tr:hover{
+	background: #f9f8f8;
+	color: white;
+}
+.operator-list tr:nth-child(odd){
+	background: white;
+}
+.operator-list tr:nth-child(even){
+	background: #f8f8f8;	
+}
+#operator-details{
+	width: 423px;
+	height: auto;
+	float: left;
+	padding-left: 41px;
+}
+.operator-profile,#operator-maps{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.operator-image{
+	width: 77px;
+	height: 77px;
+	float: left;
+	overflow: hidden;
+}
+.operator-content{
+	width: 321px;
+	padding-left: 20px;
+	float: left;
+	padding-bottom: 31px;
+}
+.operator-name{
+	color: #585859;
+	font-size: 18pt;
+	font-family: "Tw Cen MT";
+	padding-bottom: 23px;
+	float: left;
+}
+.operator-email,.operator-phone,.operator-address{
+	color: #34373b;
+	font-size: 10pt;
+	font-family: "Segoe UI";
+}
+.operator-phone{
+	padding-top: 7px;
+}
+.operator-address{
+	padding-top: 19px;
+	font-weight: bold;
+}
+.font-normal{
+	font-weight: normal;
+	padding-top: 9px;
+	float:left;
+}
+.operator-feature{
+
+}
+.feature-title{
+	width: 100%;
+	float: left;
+	padding: 22px 0 11px 0;	
+	font: 10pt "Segoe UI" bold;
+	border-bottom: #d8d8d8 solid 1px;
+	text-transform: uppercase;
+	color: #34373b;
+}
+#feature-list{
+}
+.feature-text{
+	width: 141px;
+	float: left;
+	color: #129165;
+	font: 10pt "Segoe UI";
+	padding: 11px 0;
+}

@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	
+	padding: 0;
+	margin: 0;
+	background:url(../images/body-bg.png) repeat;
+}
+
+#content-header {
+	height: 62px;
+	width: 100%;
+	background-color: #f6f7f9;
+	box-shadow: 0 3px 5px #888888;
+}
+.header {
+	width: 1280px;
+	margin: 0 auto;
+}
+#admin-logo {
+	width: 144px;	
+}
+#menu-lists {
+	width: 787px;	
+}
+#sca {
+	width: 349px;
+	padding-top: 20px;
+}
+.search {
+	width: 184px;	
+}
+.search input {
+	border: 1px solid #ccc;	
+	border-radius: 3px;
+	padding-left: 3px;
+}
+.text-center {
+	text-align: center;	
+}
+.account {
+	/*width: 107px;	*/
+}
+.account h5 {
+	font-family:"Segoe UI";
+	font-size: 11px;
+	color: #1b1919;
+	margin: 5px;
+	padding: 0;
+}
+.config {
+	width: 56px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}	
+#menu-lists ul li {
+	display: inline;
+	margin-right: 100px;
+	font-size: 14px;
+	position: relative;
+	font-family: "Segoe UI";
+}
+.ico-text {
+	position: absolute;
+	top:-7px;
+	left:33px;
+}
+.ico {
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 22px;
+	height: 24px;
+	display:inline-block;
+	
+}
+
+.chat {
+	background-image:url(../../admin/images/chat.png);
+}
+.history {
+	background-image:url(../../admin/images/history.png);
+	
+}
+.users {
+	background-image:url(../../admin/images/users.png);
+	
+}
+.report {
+	background-image:url(../../admin/images/report.png);
+	
+}
+.fl {
+	float: left !important;	
+}
+.fr {
+	float: right !important;	
+}
+
+#main-body {
+	width: 853px;
+	height: auto;
+	margin: 38px auto;
+}
+#content-body {
+	width: 100%;
+	height: auto;
+}
+.cls {
+	clear:both;	
+}
+.v-name {
+	display: block;
+	font-family:"Myriad Pro";
+	font-size: 12px;
+	color: #393939;
+	position: absolute;
+	left:47px; 
+	top: 10px;
+}
+.v-geo {
+	font-family:"Myriad Pro";
+	font-size: 11px;
+	color: #7e8b90;	
+	position: absolute; 
+	left:47px; 
+	top: 25px;
+}
+/*override*/
+.resp-tabs-list li {
+	position: relative;	
+	height: 20px;
+}
+.resp-tabs-list li img {
+	position: absolute;
+	top: 9px; 
+	left: 8px;
+}
+.box-wrapper {
+	height: 450px;
+	overflow:scroll;
+	background:#C2C2C2;
+}
+.chat-menu li {
+	display: inline;
+	margin-right: 10px;
+}
+.chat-menu {
+	margin-top: 6px;
+}
+.log-action-menu{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+.log-action-menu li{
+	text-align:right;
+}
+.log-action-menu li span{
+	font-family:"Segoe UI";
+	font-size: 12px;
+	color: #858282;
+}
+.postText {
+	border: 1px solid #999;
+	height: 23px; 
+	width:470px; 
+	margin:14px 10px; 
+	margin-top:3px;	
+}
+.text-chat-wrapper {
+	position:absolute;
+	min-height: 56px;
+	width:564px; 
+	border-top:1px; 
+	background:url("../../admin/images/texture.png") repeat scroll 0 0 rgba(0, 0, 0, 0); 
+	bottom:72px;
+	border-radius: 3px;
+	left:513px;
+}
+
+.text-chat-wrapper .loading {
+	height:11px; 
+	float: left;
+	width: 100%; 
+	text-align:center;
+	padding-top:3px;
+}
+.chat-header {
+	position:fixed;
+	height: 30px;
+	border-bottom:1px solid #888; 
+	width:549px; 
+	background:white;
+	z-index: 999;
+}
+.chatMessageList {
+	list-style:none;	
+}
+.chatMessage {
+	padding:5px;
+	background-color:#FEFEFE;
+	margin-bottom: 5px;
+	position:relative;
+}
+.send {
+  	border: 1px solid #999999;
+    color: #444444;
+    cursor: pointer;
+    font-size: 12px;
+    height: 27px;
+    position: absolute;
+    top: 17px;
+    width: 37px;
+}
+.attach {
+	background: url("../../admin/images/pin.png") no-repeat scroll center center / 20px 18px rgba(0, 0, 0, 0);
+	cursor: pointer;
+    height: 18px;
+    left: 536px;
+    position: absolute;
+    top: 21px;
+    width: 21px;
+}
+.chatText {
+	font-size: 14px;	
+}
+
+.attach-list li {
+	font-size: 14px;
+}
+.img-history, #switch_opt {
+	cursor: pointer;
+	visibility: hidden;
+}

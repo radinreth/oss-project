@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+#contain-body{
+	width:100%;	
+}
+/*============User=====================*/
+#l_content_head{
+	width:1280px;
+	height:62px;
+	float:left;
+}
+#l_content_body{
+	width:100%;
+	min-height:438px;
+	float:left;
+}
+#l_body{
+	width:100%;
+	min-height:334px;
+	float:left;
+	margin:0 auto;
+	margin-top:45px;
+}
+#l_body_left{
+	width:212px;
+	height:460px;
+	float:left;
+	padding-left:292px;
+}
+#l_body_right{
+	width:346px;
+	height:460px;
+	float:left;
+	padding-left:140px;	
+}
+.l_online{
+	width:212px;
+	height:27px;;
+	float:left;
+	background-color:#dbe3f2;
+	text-align:center;
+	padding-top:3px;
+	color:#6B24B2;
+	/*font-weight:bold;*/
+	border-radius:3px 3px 3px 3px;
+}
+.l_font_16{
+	font-size:16px;
+}
+.l_font_white{
+	color:#FFF;	
+}
+.l_user{
+	width:202px;
+	height:25px;
+	padding-left:10px;
+	float:left;
+	text-align:left;
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#718195;
+	padding-top:5px;
+}
+.l_user:hover{
+	background:#D6EBFF;
+	cursor:pointer;
+}
+.l_btn_new{
+	width:212px;
+	height:30px;
+	float:left;
+	text-align:center;
+	font-size:16px;
+	color:#FFF;
+	background-color:#17bb51;
+	border-radius:5px;
+	-moz-transition: 0.5s;
+	font-weight:bold;
+}
+.l_btn_new:hover{
+	background-color:#0c923b;
+}
+#l_info{
+	width:346px;
+	height:100px;
+	float:left;
+}
+#l_photo{
+	width:88px;
+	height:100px;
+	float:left;
+	margin-left:60px;
+	background:url(../../images/user/photo.png) no-repeat;
+	overflow:hidden;
+}
+#l_name{
+	width:165px;
+	height:90px;
+	float:left;
+	padding-left:25px;
+	color:#718195;
+	padding-top:10px;
+}
+#l_contract{
+	width:296px;
+	height:60px;
+	float:left;
+	color:#718195;
+	padding-top:20px;
+	margin-left:50px;
+	font-size:14px;
+}
+#l_u_sign{
+	width:346px;
+	height:122px;
+	float:left;
+}
+.l_btn_edit{
+	width:62px;
+	height:30px;
+	float:right;
+	font-size:14px;
+	font-weight:bold;
+	color:#00F;
+	border-radius:5px;
+	background-color:#c8c2c2;
+	-moz-transition: 0.5s;
+}
+.l_btn_edit:hover{
+	color:#FFF;
+	background-color:#b4a9a9;
+}
+.l_btn_delete{
+	width:72px;
+	height:25px;
+	float:right;
+	font-size:14px;
+	font-weight:bold;
+	color:#00F;
+	border-radius:5px;
+	padding-top:5px;
+	padding-left:20px;
+	background-color:#c8c2c2;
+	-moz-transition: 0.5s;
+}
+.l_btn_delete:hover{
+	color:#FFF;
+	background-color:#b4a9a9;
+}
+.l_bold{
+	font-weight:bold;
+}
+.l_sign_chat{
+	width:109px;
+	height:109px;
+	float:left;
+	background:url(../../images/user/sign_chat.png) no-repeat;
+}
+.l_number{
+	width:54px;
+	height:25px;
+	float:left;
+	margin-top:25px;
+	margin-left:30px;
+	text-align:center;
+	color:#357bd1;
+	font-size:24px;
+	font-weight:bold;
+}
+.l_sign_favorite{
+	width:109px;
+	height:109px;
+	float:left;
+	background:url(../../images/user/sign_favorite.png) no-repeat;
+	margin-left:7px;
+}
+.l_sign_misschat{
+	width:109px;
+	height:109px;
+	float:left;
+	background:url(../../images/user/sign_misschat.png) no-repeat;
+	margin-left:7px;
+}
+.l_padding_left_8{
+	padding-left:8px;
+}
+.l_height_30{
+	height:30px;
+}
+.l_font_12{
+	font-size:12px;
+}
+.l_button{
+	width:346px;
+	height:45px;
+	float:left;
+}
+.l_whole_user{
+	width:212px;
+	height:auto;
+	max-height:220px;
+	float:left;
+	/*overflow:scroll;*/
+	/*overflow-x:hidden;*/
+	min-height:20px;
+	margin-bottom:15px;
+}
+.l_grad{
+	color:#FCC;
+}
+.l_blue{
+	color:#00C;
+}
