@@ -178,7 +178,7 @@
           </div>
           <div id="l_u_sign">
           	<section style="display:inline">
-          			<span class="tooltip l_sign_chat" title="Chat"><div class="l_number"><?php echo $obj->Total_coulnter_chated_miss($user['ccm_id'],1);?>+</div>
+          			<span class="tooltip l_sign_chat" title="Chat"><div class="l_number"><?php echo $obj->Total_coulnter_chated_miss($user['ccm_id'],1);?></div>
          			</span>
           	</section>
           	<section style="display:inline">
@@ -186,7 +186,7 @@
          			</span>
           	</section>
           	<section style="display:inline">
-          			<span class="tooltip l_sign_misschat" title="MissChat"><div class="l_number"><?php echo $obj->Total_coulnter_chated_miss($user['ccm_id'],0);?>+</div>
+          			<span class="tooltip l_sign_misschat" title="MissChat"><div class="l_number"><?php echo $obj->Total_coulnter_chated_miss($user['ccm_id'],0);?></div>
          			</span>
           	</section>
 	      </div>

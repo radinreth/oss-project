@@ -63,7 +63,7 @@
 									</ul>
 								</li>
 								<li>
-									<a href="">Rate</a>
+									<!--<a href="">Rate</a>-->
 									<ul>
                                     <!--new edit-->
 										<li><a href="?action=rated&rated=rate">Rated</a></li>

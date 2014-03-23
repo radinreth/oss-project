@@ -102,7 +102,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
           	<div id="queued_visitor" class="show_calculator_chart">
             	<div class="icons_data_show"><img src="../images/queuse_visitor.png" /></div>
                 <div class="text_data_meaning">QUEUED VISITORS</div>
-                <div class="chart_data_s"><?php echo $_SESSION['avg_miss'];?> /month</div>
+                <div class="chart_data_s"><?php echo $obj->misschat($count_id);?></div>
           	</div>
             <div id="queued_visitor" class="show_calculator_chart">
             	<div class="icons_data_show"><img src="../images/heart_chart.png" /></div>

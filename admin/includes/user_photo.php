@@ -2,7 +2,7 @@
 include '../../class/class.php';
 $path = "../images/new_user/";
 
-	$valid_formats = array("jpg", "png", "gif", "bmp");
+	$valid_formats = array("jpg", "png", "gif", "bmp","jpeg");
 	if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
 		{
 			$name = $_FILES['photo']['name'];
@@ -20,7 +20,7 @@ $path = "../images/new_user/";
 							if(move_uploaded_file($tmp, $path.$actual_image_name))
 								{
 									$_SESSION['photo_user']=$actual_image_name;
-									echo "<img src='../images/new_user/".$actual_image_name."'  class='preview' width=100px height=100px> ";
+									echo "<img src='../images/new_user/".$actual_image_name."'  class='preview' width=100px> ";
 								}
 							else
 								echo "failed";

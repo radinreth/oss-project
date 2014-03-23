@@ -290,7 +290,7 @@ include 'define.php';
 					$month_count[]=date('M', mktime(0, 0, 0, $j+1, 1, 2000));
 					$month_count[]=$count_chated;
 					$month_count[]=$count_missed;
-					$_SESSION['avg_miss']=round(($total_missed/($j+1)),2);
+					//$_SESSION['avg_miss']=round(($total_missed/($j+1)),2);
 					
 					if($total==0)
 						$_SESSION['avg_quality'] = 0;
@@ -308,7 +308,6 @@ include 'define.php';
 		   }
 		   function Total_coulnter_chated_miss($counter_id,$type){
 			   $sql="Select DISTINCT vis_id from ".TABLE_CHART." where ccm_id='$counter_id' and reply_status='$type'";
-			   //echo $sql;
 					$result=mysql_query($sql);
 					$count_chated=mysql_num_rows($result);
 					return $count_chated;
@@ -722,6 +721,13 @@ include 'define.php';
 		$rated_good = mysql_num_rows($sql_satisfy);
 		
 		return round(($rated_good/$total_handle) * 100,2);
+   }
+   function misschat($count_id){
+	   $sql="Select DISTINCT vis_id from ".TABLE_CHART." where ccm_id='$count_id' and reply_status='0'";
+	  //echo $sql;
+	  $result=mysql_query($sql);
+	  $count_missed=mysql_num_rows($result);
+	  return $count_missed;
    }
 
 	//==============end vorleak===========
