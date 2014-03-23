@@ -103,19 +103,19 @@
                             	<tr>
 
                                     <td width="86" align="center">CHATS :</td>
-                                    <td width="20"><input type="radio" name="chat_status" id="r_accept" value="1" <?php echo ($edit['chat_status']=="1"?"checked":''); ?> /></td>
-                                    <td width="92">Accept</td>
-                                    <td width="108" align="center">STATUS :</td>
-                                    <td width="20"><input type="radio" name="status" id="r_visible" value="1" <?php echo ($edit['ccm_status']=="1"?"checked":''); ?> /></td>
-                                    <td width="115">Enable</td>
+                                    <td width="115"><label><input type="radio" name="chat_status" id="r_accept" value="1" <?php echo ($edit['chat_status']=="1"?"checked":''); ?> />Accept</label></td>
+                                    <td width="69"></td>
+                                    <td width="97" align="center">STATUS :</td>
+                                    <td width="109"><label><input type="radio" name="status" id="r_visible" value="1" <?php echo ($edit['ccm_status']=="1"?"checked":''); ?> />Enable</label></td>
+                                    <td width="72"></td>
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
-                                    <td><input type="radio" name="chat_status" id="r_Not_accept" value="0" <?php echo ($edit['chat_status']=="0"?"checked":''); ?>/></td>
-                                    <td>Not accept</td>
+                                    <td><label><input type="radio" name="chat_status" id="r_Not_accept" value="0" <?php echo ($edit['chat_status']=="0"?"checked":''); ?>/>Not accept</label></td>
+                                    <td></td>
                                     <td>&nbsp;</td>
-                                    <td><input type="radio" name="status" id="r_none" value="0" <?php echo ($edit['ccm_status']=="0"?"checked":''); ?>/></td>
-                                    <td>Disable</td>
+                                    <td><label><input type="radio" name="status" id="r_none" value="0" <?php echo ($edit['ccm_status']=="0"?"checked":''); ?>/>Disable</label></td>
+                                    <td></td>
                                     
                                     
                                 </tr>
@@ -126,18 +126,18 @@
                                     <td>&nbsp;</td>
                                     <td>&nbsp;</td>
                                     <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
+                                    <td width="1">&nbsp;</td>
+                                    <td width="1">&nbsp;</td>
+                                    <td width="1">&nbsp;</td>
                                     
                                 </tr>
                                 <tr>
                                 	<td>&nbsp;</td>
-                                	<td>&nbsp;</td>
+                                	<td>&nbsp;<input type="submit" value="<?php echo ($_GET['action']=='edit1')?'Update':'Save'?>" id="btn_save_user"/></td>
+                                    <td>&nbsp;<input type="reset" value="Reset" style="border:0px; background:#999; color:#FFF; width:55px; height:23px;" /></td>
+                                    <td align="right"></td>
                                     <td>&nbsp;</td>
-                                    <td align="right"><input type="submit" value="<?php echo ($_GET['action']=='edit1')?'Update':'Save'?>" id="btn_save_user"/></td>
                                     <td>&nbsp;</td>
-                                    <td>or &nbsp;<input type="reset" value="Reset" style="border:0px; background:#999; color:#FFF; width:55px; height:23px;" /></td>
                                     <td>&nbsp;</td>
                                     <td>&nbsp;</td>
                                     <td></td>
