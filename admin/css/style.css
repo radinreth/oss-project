@@ -130,7 +130,10 @@ tr,td:hover{
 }
 .report {
 	background-image:url(../images/report.png);
-	
+}
+.company {
+	background-image:url(../images/company.png);
+	height: 19px;
 }
 .fl {
 	float: left !important;	

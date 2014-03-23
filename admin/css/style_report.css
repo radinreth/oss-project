@@ -227,18 +227,12 @@
 	color:#666;
 	padding-left:10px;
 }
-.text_com_area:hover{
-	border:1px solid #30F;
-	padding-left:10px;
-}
 .text_com_area{
 	color:#666;
 
 	padding-left:10px;
 }
-.text_com:hover{
-	border:1px solid #30F;
-}
+
 .com_btn{
 	width:100px;
 	height:30px;

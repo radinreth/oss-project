@@ -52,7 +52,7 @@ if(isset($_SESSION['position_opterator'])){
                         </li>
                         <!--company profile-->
                         <li><a href="../set-company/?page=company">
-                        	<span class="ico report"></span>
+                        	<span class="ico company"></span>
                              <span class="ico-text <?php echo (($_GET['page'])=='company'?'active_manu':''); ?>">COMPANY</span>
                             </a>
                         </li>
