@@ -488,6 +488,12 @@ include 'define.php';
 			$active_reg=mysql_num_rows($result);
 			return $active_reg;
 		   }
+		   function Total_account(){
+			$sql="Select *from ".TABLE_USER."";
+			$result=mysql_query($sql);
+			$active_reg=mysql_num_rows($result);
+			return $active_reg;
+		   }
            
             /*++++++++++++++++leang+++++++++++++++++*/
            function l_saveUsers($con='insert',$condition=''){                

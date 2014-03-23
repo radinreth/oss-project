@@ -115,7 +115,7 @@ $(document).ready(function() {
 				if(data!=""){
 					$("#operator-details").html(data);
 				}else{
-					$("#operator-details").html("Fail to save");
+					$("#operator-details").html("The operator not yet creat company profile");
 				}
 			},
 			error: function(jqXHR, textStatus, errorThrown) 

@@ -84,15 +84,14 @@ if(isset($_SESSION['position_opterator'])){
                 <div id="sca" class="fl">
                 	
                     <div class="config fl text-center">
-                    	
                     	<img src="../images/config.png" />
                     </div>
                     <div class="account fl text-center">
-                    	<h5 id="current-account" style="cursor:pointer;"><?php echo ucwords($_SESSION['name']); ?> | 
+                    	<h5 id="current-account"><?php echo ucwords($_SESSION['name']); ?>  
                         <?php if(isset($_SESSION['position_opterator'])){?>
-                        <a href="../account_update/">Account <?php if($_SESSION['package']==0){echo "Free";}else if($_SESSION['package']==1){echo "Premium";}else{echo "Golden";};?></a> <?php }?>| <a href="?action=logout">Log out</a></h5>
+                        <a href="../account_update/">| Account <?php if($_SESSION['package']==0){echo "Free";}else if($_SESSION['package']==1){echo "Premium";}else{echo "Golden";};?></a> <?php }?>| <a href="?action=logout">Log out</a></h5>
                     </div>
-                    <div class="cls"></div>
+                    
                 </div><!--sca-->
             </div>
         </div>

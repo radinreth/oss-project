@@ -1,8 +1,8 @@
 <?php 
 include '../../class/class.php';
 if($_GET['action']=='search'){
-	$opt_id=$_POST['txt_opt'];
-	$sql="Select *from ".TABLE_USER." where user_id='$opt_id'";
+	$opt_name=$_POST['txt_opt'];
+	$sql="Select *from ".TABLE_USER." where user_name like '%$opt_name%'";
 }else{
 	$sql="Select *from ".TABLE_USER."";
 }
@@ -31,25 +31,13 @@ $query=mysql_query($sql);
 	<div id="content-all">
     	<?php include('../includes/header.php');?>
         <!--content-header-->
-        <div id="account-menu" style="width: 182px; height:75px; background: url(../images/account-click.png) no-repeat; position: fixed; right: 60px;top:42px; display:none">
-            <div class="log-action" style="position:absolute; top: 17px; right: 60px;">
-            	<ul class="log-action-menu">
-                	<li>
-                    	<span><a href="javascript:;">Swich account</a></span>
-                    </li>
-                    <li>
-                    	<span><a href="javascript:;">Sign out</a></span>
-                    </li>
-                </ul>
-            </div>
-            <img src="../images/avatar-log.png" style="position:absolute; top: 17px; right:10px;" />
-        </div>
+        
         <div id="content-body">
         	<div id="content-operator">
             	  <div id="operator-search">
             	  		<div id="operator-search-form">
                         	<form name="frm_search_opt" id="" method="post" action="?action=search">								
-	            	  			<input type="text" placeholder="radin reth" class="textbox-search" name="txt_opt" value="<?php echo $_POST['txt_opt'];?>">
+	            	  			<input type="text" placeholder="Search by user name" class="textbox-search" name="txt_opt" value="<?php echo $_POST['txt_opt'];?>">
 	            	  			<input type="submit" class="button-search" value="">
                             </form>	            	  		
             	  		</div>
@@ -69,6 +57,8 @@ $query=mysql_query($sql);
 								</tr>
                                 <?php
 								$i=0;
+								$num_row=mysql_num_rows($query);
+								if($num_row>0){
 								while($operator=mysql_fetch_array($query)){
 									$i=$i+1;
 								?>
@@ -116,6 +106,12 @@ $query=mysql_query($sql);
                                         </a>
     								</tr>                                
 								<?php
+								}
+								}else{
+									?>
+									<p> "No this operator for search"</p>
+                                    <?php
+									
 								}
 								?>
 							</table>

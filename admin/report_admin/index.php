@@ -98,7 +98,7 @@
             <div id="queued_visitor" class="show_calculator_chart">
             	<div class="icons_data_show"><img src="../images/operator_total.png" /></div>
                 <div class="text_data_meaning">TOTAL OPERATOR</div>
-                <div class="chart_data_s"><label style="color:#930;"><?php echo $_SESSION['total_opt']; ?></label></div>
+                <div class="chart_data_s"><label style="color:#930;"><?php echo $obj->Total_account(); ?></label></div>
           	</div>
             <div id="queued_visitor" class="show_calculator_chart_adm">
             	<div class="icons_data_show_recent_confirm"><img src="../images/total_confirm.png" /></div>
