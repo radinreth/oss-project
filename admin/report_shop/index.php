@@ -107,7 +107,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
             <div id="queued_visitor" class="show_calculator_chart">
             	<div class="icons_data_show"><img src="../images/heart_chart.png" /></div>
                 <div class="text_data_meaning">VISITORS SATISFACTION</div>
-                <div class="chart_data_s"><?php echo $_SESSION['avg_quality'];?>%</div>
+                <div class="chart_data_s"><?php echo $obj->ccm_satifaction($count_id);?>%</div>
           	</div>
             <div id="queued_visitor" class="show_calculator_chart">
             	<div class="icons_data_show"><img src="../images/house_icons.png" /></div>

@@ -712,6 +712,17 @@ include 'define.php';
 		   return 0;
 	   }
    }
+   function ccm_satifaction($ccm_id){
+	   // get all message that ccm have chat
+	   // get satisfaction
+		$sql = mysql_query("select * from tbl_chat_message where ccm_id='$ccm_id' group by vis_id");
+		$sql_satisfy = mysql_query("select * from tbl_satisfies where ccm_id = '$ccm_id' and sat_like=1");
+		//return $sql_satisfy.' - '.mysql_num_rows($sql);
+		$total_handle = mysql_num_rows($sql);
+		$rated_good = mysql_num_rows($sql_satisfy);
+		
+		return round(($rated_good/$total_handle) * 100,2);
+   }
 
 	//==============end vorleak===========
  }
