@@ -101,8 +101,6 @@
 				return $ccm_id_array['ccm_id'];
 			}
 
-			
-			//return $_REQUEST["shop_code"].'--> '."select * from tbl_chat_message where ccm_id in (select ccm_id from tbl_counter_companies where user_id='".$com_record["user_id"]."')";
 		}
 		function return_single($field, $table, $condition){
 			$sql = "select $field from $table where $condition";
