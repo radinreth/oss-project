@@ -6,7 +6,7 @@ if(session_id() == '') {
 	include_once("../class/_class.php");
 	
 	//echo $_SESSION['ccm_id'];
-	if( true){
+	if(!(isset($_SESSION['ccm_id']) && $_SESSION['ccm_id'] != "" && $_SESSION['ccm_id'] != NULL) or ($_SESSION['ccm_id']==-1)){
 		$obj = new Operations();
 		$_SESSION['ccm_id'] = $obj->get_ccm();
 
@@ -14,6 +14,7 @@ if(session_id() == '') {
 
 		session_write_close();
 	}
+  //echo '--> '.$_SESSION['ccm_id'];
 //***
 ?>
 

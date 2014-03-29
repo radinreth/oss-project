@@ -51,9 +51,12 @@
 			return $sql_fetch;
 		}
 
-		function get_ccm(){
-			$com_record = $this->return_row("*", "company_profiles", "com_id='".$_REQUEST["shop_code"]."'");
-
+		function get_ccm($shop_code = -1){
+			$com_id = ($shop_code == -1) ? $_REQUEST["shop_code"] : $shop_code;
+			//$com_record = $this->return_row("*", "company_profiles", "com_id='".$_REQUEST["shop_code"]."'");
+			$com_record = $this->return_row("*", "company_profiles", "com_id='".$com_id."'");
+			////THIS IS WORKING///
+			//$com_record = $this->return_row("*", "company_profiles", "com_id='33'");
 
 			//$ccms_in_chat = $this->return_array("*","tbl_counter_companies","where user_id='".$com_record["user_id"]."'");
 			//$chat_message = mysql_query("select * from tbl_chat_message");
