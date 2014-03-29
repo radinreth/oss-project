@@ -21,7 +21,7 @@ function Box(){
 	this.build = function(box_chat){
 		//alert("shop code: "+shop_code);
 		$.ajax({
-			   'url': 'http://localhost:81/OSS/PROJECT/integrated/oss/chat_mode/engine/embed/check_ccm.php?callback=mycallback&com_id='+shop_code,
+			   'url': 'http://ffg-cambo.com/oss-mekong/chat_mode/engine/embed/check_ccm.php?callback=mycallback&com_id='+shop_code,
 			   'type': 'post',
 			   'contentType': 'application/json; charset=utf-8',
 			   'dataType': 'jsonp',
@@ -46,12 +46,12 @@ function Box(){
 			   			
 			   			var image_like = document.createElement("img");
 			   			//setAttributes(image_like, {"src":"http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fimages%2Flike.png", "class":"ico-fb", "id":"like", "style":"background: none repeat scroll 0 0 #EFEFEF; border: 1px solid #BEBEBE; cursor: pointer; position: absolute; top: 3px; right: 3px;"});
-			   			setAttributes(image_like, {"src":"http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/images/like.png", "class":"ico-fb", "id":"like", "style":"background: none repeat scroll 0 0 #EFEFEF; border: 1px solid #BEBEBE; cursor: pointer; position: absolute; top: 3px; right: 3px;"});
+			   			setAttributes(image_like, {"src":"http://ffg-cambo.com/oss-mekong/chat_mode/images/like.png", "class":"ico-fb", "id":"like", "style":"background: none repeat scroll 0 0 #EFEFEF; border: 1px solid #BEBEBE; cursor: pointer; position: absolute; top: 3px; right: 3px;"});
 			   			box_chat.appendChild(image_like);
 			   			
 			   			var image_dislike = document.createElement("img");
 			   			//setAttributes(image_dislike, {"src":"http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fimages%2Fdislike.png", "class":"ico-fb", "id":"dislike", "style":"background: none repeat scroll 0 0 #EFEFEF; border: 1px solid #BEBEBE; cursor: pointer; position: absolute; top: 3px; right: 31px;"});
-			   			setAttributes(image_dislike, {"src":"http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/images/dislike.png", "class":"ico-fb", "id":"dislike", "style":"background: none repeat scroll 0 0 #EFEFEF; border: 1px solid #BEBEBE; cursor: pointer; position: absolute; top: 3px; right: 31px;"});
+			   			setAttributes(image_dislike, {"src":"http://ffg-cambo.com/oss-mekong/chat_mode/images/dislike.png", "class":"ico-fb", "id":"dislike", "style":"background: none repeat scroll 0 0 #EFEFEF; border: 1px solid #BEBEBE; cursor: pointer; position: absolute; top: 3px; right: 31px;"});
 			   			box_chat.appendChild(image_dislike);
 			   			
 			   			this.basic_info(box_chat);
@@ -131,7 +131,7 @@ function Box(){
 		form.id = "formPostChat";
 		
 		//setAttributes(form, {"action":"http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fjs%2Fajax%2FajaximageClient.php", "method":"post", "enctype":"multipart/form-data"});
-		setAttributes(form, {"action":"http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/js/ajax/ajaximageClient.php", "method":"post", "enctype":"multipart/form-data"});
+		setAttributes(form, {"action":"http://ffg-cambo.com/oss-mekong/chat_mode/js/ajax/ajaximageClient.php", "method":"post", "enctype":"multipart/form-data"});
 		
 		var input_file = document.createElement("input");
 		setAttributes(input_file, {"type":"file", "class":"filePostChat", "name":"filePostChat", "id":"filePostChat", "name": "filePostChat[]", "multiple":"multiple"})
@@ -141,7 +141,7 @@ function Box(){
 		setAttributes(hidden_div, {"style":"background: #fff; text-align:center; display:none;", "id": "client-load-img"});
 		var loading = document.createElement("img");
 		//loading.setAttribute("src", "http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fimages%2Ffb_loader.gif");
-		loading.setAttribute("src", "http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/images/fb_loader.gif");
+		loading.setAttribute("src", "http://ffg-cambo.com/oss-mekong/chat_mode/images/fb_loader.gif");
 		hidden_div.appendChild(loading);
 		form.appendChild(hidden_div);
 		
@@ -187,7 +187,7 @@ function Chatter(){
 		
 		$.ajax({
 			//'url': 'http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fengine%2Fe_clientEngine.php',
-			'url': 'http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/engine/e_clientEngine.php?callback=mycallback',
+			'url': 'http://ffg-cambo.com/oss-mekong/chat_mode/engine/e_clientEngine.php?callback=mycallback',
 			'type': 'post',
 			'dataType': 'jsonp',
 			'contentType': 'application/json; charset=utf-8',
@@ -218,7 +218,7 @@ function Chatter(){
  	this.postMessage = function(visitor, ccm_id, text, callback){
 		$.ajax({
 			//'url': 'http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fengine%2Fe_clientEngine.php',
-			'url': 'http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/engine/e_clientEngine.php?callback=mycallback',
+			'url': 'http://ffg-cambo.com/oss-mekong/chat_mode/engine/e_clientEngine.php?callback=mycallback',
 			'type': 'post',
 			'dataType': 'jsonp',
 			'contentType': 'application/json; charset=utf-8',
@@ -258,7 +258,7 @@ function Satisfies(){
 	this.like = function(){
 		$.ajax({
 			   //'url': 'http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fengine%2Fsatisfies%2Flike.php',
-			   'url': 'http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/engine/satisfies/e_like.php?callback=mycallback',
+			   'url': 'http://ffg-cambo.com/oss-mekong/chat_mode/engine/satisfies/e_like.php?callback=mycallback',
 			   'type': 'post',
 			   'contentType': 'application/json; charset=utf-8',
 			   'dataType': 'jsonp',
@@ -271,7 +271,7 @@ function Satisfies(){
 	this.dislike = function(){
 		$.ajax({
 			   //'url': 'http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fengine%2Fsatisfies%2Fdislike.php',
-			   'url': 'http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/engine/satisfies/e_dislike.php?callback=mycallback',
+			   'url': 'http://ffg-cambo.com/oss-mekong/chat_mode/engine/satisfies/e_dislike.php?callback=mycallback',
 			   'type': 'post',
 			   'contentType': 'application/json; charset=utf-8',
 			   'dataType': 'jsonp',
@@ -300,7 +300,7 @@ $('document').ready(function(){
 	//current_page = ( $("#current_page").val() != "0" ) ? '../': '';
 
 	//current_page = 'http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2F';
-	current_page = 'http://192.168.1.6:81/OSS/PROJECT/integrated/oss/';
+	current_page = 'http://ffg-cambo.com/oss-mekong/';
 	$("#like").click(function(){
 		s.like();						
 	});
@@ -366,7 +366,7 @@ $('document').ready(function(){
 			   /*http://oss-mekong.netau.net/js/bootstrap.min.js*/
 			   //'url': '../../../../OSS/PROJECT/integrated/oss/chat_mode/engine/setup/index.php',
 			   //'url': "http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fengine%2Fsetup%2Findex.php",
-			   'url': "http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/engine/setup/e_index.php?callback=mycallback",
+			   'url': "http://ffg-cambo.com/oss-mekong/chat_mode/engine/setup/e_index.php?callback=mycallback",
 			   'type': 'POST',
 			   'contentType': "application/json; charset=utf-8",
 		       'dataType': "jsonp",
@@ -386,7 +386,7 @@ $('document').ready(function(){
 
 						$.ajax({
 							//"url" : "http%3A%2F%2F192.168.1.6%3A81%2FOSS%2FPROJECT%2Fintegrated%2Foss%2Fchat_mode%2Fengine%2Fsetup%2Fccm_id.php",
-							"url" : "http://192.168.1.6:81/OSS/PROJECT/integrated/oss/chat_mode/engine/setup/ccm_id.php?callback=mycallback",
+							"url" : "http://ffg-cambo.com/oss-mekong/chat_mode/engine/setup/ccm_id.php?callback=mycallback",
 							"type" : "post",
 						    'contentType': "application/json; charset=utf-8",
 					        'dataType': "jsonp",
