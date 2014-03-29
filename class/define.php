@@ -8,15 +8,15 @@
 	
     //localhost
 	
-    // define('HOST','localhost');
-    // define('SERVER','root');
-    // define('PASSWORD','');      
-    // define('DATABASE','oss_db');
+	// define('HOST','localhost');
+ //    define('SERVER','root');
+ //    define('PASSWORD','');      
+ //    define('DATABASE','oss_db');
 
 	define('HOST','localhost');
-    define('SERVER','root');
-    define('PASSWORD','');      
-    define('DATABASE','oss_db');
+    define('SERVER','ffgcambo');
+    define('PASSWORD','R!P6L?5&Kbhm');      
+    define('DATABASE','ffgcambo_oss');
 
 	
 	
