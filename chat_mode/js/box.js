@@ -18,6 +18,7 @@ function convert(str)
 }
 
 function Box(){
+	var thiz = this;
 	this.build = function(box_chat){
 		//alert("shop code: "+shop_code);
 		$.ajax({
@@ -28,7 +29,7 @@ function Box(){
 			   'jsonp': 'callback',
 			   'data': {},
 			   'success': function(data){
-			   		alert(data)
+			   		//alert(data)
 			   		if(data==-1){
 
 			   			var heading_no_counter = document.createElement("h5");
@@ -54,11 +55,13 @@ function Box(){
 			   			setAttributes(image_dislike, {"src":"http://ffg-cambo.com/oss-mekong/chat_mode/images/dislike.png", "class":"ico-fb", "id":"dislike", "style":"background: none repeat scroll 0 0 #EFEFEF; border: 1px solid #BEBEBE; cursor: pointer; position: absolute; top: 3px; right: 31px;"});
 			   			box_chat.appendChild(image_dislike);
 			   			
-			   			this.basic_info(box_chat);
-			   			this.unorder_list(box_chat);
+			   			thiz.basic_info(box_chat);
+			   			thiz.unorder_list(box_chat);
 			   			
-			   			this.create_form(box_chat);
-			   			this.result(box_chat);
+			   			thiz.create_form(box_chat);
+			   			thiz.result(box_chat);
+			   			var engine = new Engine();
+			   			engine.toggle();
 			   		}
 			   },
 			   'error': function(e){alert(e);}

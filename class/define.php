@@ -13,10 +13,15 @@
  //    define('PASSWORD','');      
  //    define('DATABASE','oss_db');
 
-	define('HOST','localhost');
-    define('SERVER','ffgcambo');
-    define('PASSWORD','R!P6L?5&Kbhm');      
-    define('DATABASE','ffgcambo_oss');
+	// define('HOST','localhost');
+ //    define('SERVER','ffgcambo');
+ //    define('PASSWORD','R!P6L?5&Kbhm');      
+ //    define('DATABASE','ffgcambo_oss');
+
+define('HOST','localhost');
+    define('SERVER','root');
+    define('PASSWORD','');      
+    define('DATABASE','oss_db');
 
 	
 	
