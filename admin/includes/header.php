@@ -5,13 +5,12 @@ if($_GET['action']=="logout"){
 	$obj->logout();
 	header("Location:../../");
 }
-
-$check_expird=$obj->check_expird_date($_SESSION['id_operator']);
-if($check_expird<=0){
-	header("Location:../account_expird/");
+if(isset($_SESSION['position_opterator'])){
+	$check_expird=$obj->check_expird_date($_SESSION['id_operator']);
+	if($check_expird<=0){
+		header("Location:../account_expird/");
+	}
 }
-
-
 ?>
 <div id="content-header">
         	<div class="header">

@@ -1,8 +1,8 @@
 <?php
-if(session_id() == '') {
+//if(session_id() == '') {
 session_start();
 ob_start();
-}
+//}
 include 'define.php';
  class Mycls{
            public function Mycls(){
@@ -78,7 +78,8 @@ include 'define.php';
                      	$email=$this->clean($email);
                      	$pass=md5($this->clean($pass));
                      	$position=$this->clean($position);
-						
+						//echo $position;echo $email;echo $pass;
+						//exit();
 						if($position=='1'){
 							echo $_SESSION['id_counter'];
 							if(!isset($_SESSION['id_system']) && !isset($_SESSION['id_operator']) && !isset($_SESSION['id_counter']) ){
@@ -126,14 +127,17 @@ include 'define.php';
 						}
 						
 						else if($position=='3'){
-							if(!isset($_SESSION['id_counter']) && !isset($_SESSION['id_operator']) && !isset($_SESSION['id_system'])){
 							
+							
+							if(!isset($_SESSION['id_counter']) && !isset($_SESSION['id_operator']) && !isset($_SESSION['id_system'])){
+							$username=$email;
 								//echo "Admin system";
-							 $sql1="Select * from ".TABLE_ADMIN." where sys_username='$email' and sys_password='$pass'";//email=username for admin 
+							 $sql1="Select * from ".TABLE_ADMIN." where sys_username='$username' and sys_password='$pass'";//email=username for admin 
 							 $result1=mysql_query($sql1);
 							 $num=mysql_num_rows($result1);
 							 if($num>0){
-								 $sql="Select * from ".TABLE_ADMIN." where sys_username='$email' and sys_password='$pass' and sys_status='1'" ;
+								 $sql="Select * from ".TABLE_ADMIN." where sys_username='$username' and sys_password='$pass' and sys_status='1'" ;
+								 //echo 'sql: '.$sql; exit();
 								 $result=mysql_query($sql);
 								 $num=mysql_num_rows($result);
 								 if($num>0){

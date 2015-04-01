@@ -104,7 +104,7 @@ $("#frmlogin").submit(function(e)
         data : postData,
         success:function(data, textStatus, jqXHR) 
         {
-			//alert(data);
+			alert(data);
 			if(data=='true'){
 				$("#AlertMessage").fadeIn();
 					window.location.href="../admin/";

@@ -5,13 +5,13 @@ if($_GET['action']=="logout"){
 	$obj->logout();
 	header("Location:../");
 }
-
-$check_expird=$obj->check_expird_date($_SESSION['id_operator']);
-echo $check_expird;
-if($check_expird<=0){
-	header("Location:account_expird/");
+if(isset($_SESSION['position_opterator'])){
+	$check_expird=$obj->check_expird_date($_SESSION['id_operator']);
+	//echo $check_expird;
+	if($check_expird<=0){
+		header("Location:account_expird/");
+	}
 }
-
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
