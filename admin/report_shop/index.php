@@ -16,7 +16,7 @@
 <?php
 		if($_GET['action']=="submit"){
 			$count_id=$_POST['text_search_counter'];
-			//$count_id=$_POST['count_id'];
+		
 			$arr_month_chat=$obj->Total_counter_chate_monthly($count_id);
 		  	$array_chat=json_encode($arr_month_chat);
 		}
@@ -112,7 +112,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
             <div id="queued_visitor" class="show_calculator_chart">
             	<div class="icons_data_show"><img src="../images/house_icons.png" /></div>
                 <div class="text_data_meaning">AVAILABITITY</div>
-                <div class="chart_data_s">34h /month</div>
+               
+                <div class="chart_data_s"><?php echo $obj->ccm_available($count_id);?></div>
           	</div>
       </div>
     </div>

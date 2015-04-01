@@ -691,6 +691,27 @@ include 'define.php';
 	   $num_row=mysql_num_rows($query);
 	   return $num_row;
    }
+   function ccm_available($ccm_id){
+	   $sql="Select *from ".TRACTCOUNTER." where ccm_id='$ccm_id' and logout_date!='0000-00-00 00:00:00'";
+	   $query=mysql_query($sql);
+	   $num_row=mysql_num_rows($query);
+	   if($num_row>0){
+		   $diff=0;
+		   while($counter=mysql_fetch_array($query)){
+			   
+			   $diff += abs(strtotime($counter['logout_date']) - strtotime($counter['login_date']));
+			   
+			   
+		   }
+		   		
+		   		$hour = floor($diff/3600);
+			   $minute = floor(($diff-($hour*3600))/60);
+			   $second = $diff - ($hour*3600) - ($minute*60);
+		   return  "$hour H $minute Mn $second s";
+	   }else{
+		   return 0;
+	   }
+   }
 
 	//==============end vorleak===========
  }
