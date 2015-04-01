@@ -81,7 +81,7 @@ include 'define.php';
 						//echo $position;echo $email;echo $pass;
 						//exit();
 						if($position=='1'){
-							echo $_SESSION['id_counter'];
+							//echo $_SESSION['id_counter'];
 							if(!isset($_SESSION['id_system']) && !isset($_SESSION['id_operator']) && !isset($_SESSION['id_counter']) ){
 							//echo "counter";
 							 $sql1="Select * from ".TABLE_COUNTER." where ccm_email='$email' and password='$pass'";
@@ -102,6 +102,10 @@ include 'define.php';
 											$fetch_online = mysql_fetch_array($query_online);
 											$_SESSION['ccm_id'] = $fetch_online['ccm_id'];
 										   //$result=mysql_query($sql);
+										   $now_dat=date("Y-m-d H:i:s");
+										   $ccm_id=$row['ccm_id'];
+										   $sql4="Insert into ".TRACTCOUNTER."(log_id,ccm_id,login_date) values('','$ccm_id','$now_dat')";
+										   mysql_query( $sql4);
 										   
 										   $_SESSION['id_counter']=$row['ccm_id'];
 										   //$_SESSION['ccm_id'] = $row['ccm_id'];
@@ -215,6 +219,13 @@ include 'define.php';
 			   if($_SESSION['position_counter']=='1'){
 				   	$sql="Update ".TABLE_COUNTER." set online_status='0' where ccm_id='".$_SESSION['id_counter']."'";
 				   	mysql_query($sql);
+					$now_dat=date("Y-m-d H:i:s");
+					
+					$last_ccm_record = mysql_query("SELECT max(log_id) FROM tbl_trackcounter WHERE ccm_id='".$_SESSION['id_counter']."'");
+					$fetch_last_ccm_record = mysql_fetch_array($last_ccm_record);
+					$sql="Update ".TRACTCOUNTER." set logout_date='$now_dat' where ccm_id='".$_SESSION['id_counter']."' and log_id='".$fetch_last_ccm_record["max(log_id)"]."'";
+				   	mysql_query($sql);
+					
 				   	session_destroy();
 			   }else if($_SESSION['position_opterator']=='2'){
 				   	session_destroy();

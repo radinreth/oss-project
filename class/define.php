@@ -36,5 +36,6 @@
 	define('TABLE_ADMIN','tbl_sys_admins');//
 	define('VISITORS','tbl_visitors');
 	define('SATISFIES','tbl_satisfies');
+	define('TRACTCOUNTER','tbl_trackcounter');
 
 ?>
